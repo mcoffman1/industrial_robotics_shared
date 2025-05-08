@@ -1,5 +1,5 @@
-# basic-shared
-Shared repo for basic circuits and plcs
+# Industrial robotics shared
+Shared repo for Industrial Robotics
 
 # 📘 Shared Educational Resources
 
