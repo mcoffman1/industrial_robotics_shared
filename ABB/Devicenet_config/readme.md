@@ -12,7 +12,7 @@ This guide walks through the steps to configure DeviceNet communication on an AB
 ![Change Options](pics/change_options.png)
 
 3. In the list of options, expand **Industrial Networks**.
-4. Check the box for **109-1 DeviceNet**.
+4. Check the box for **709-1 DeviceNet**.
 
 ![Add DeviceNet](pics/add_devicenet.png)
 
@@ -24,7 +24,7 @@ This guide walks through the steps to configure DeviceNet communication on an AB
 
 1. In the left panel, go to **Configuration**.
 2. Double-click **I/O System**.
-3. Right-click on **DeviceNet Device** and select **New DeviceNet Device**.
+3. Right-click on **DeviceNet Device** and select **New DeviceNet Device...**.
 
 ![Add New Device](pics/add_new_device.png)
 
