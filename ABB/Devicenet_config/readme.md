@@ -1,4 +1,4 @@
-# Configuring DeviceNet on an ABB Robot Controller
+# Configuring DeviceNet on an ABB Virtual Controller
 
 This guide walks through the steps to configure DeviceNet communication on an ABB robot controller.
 
