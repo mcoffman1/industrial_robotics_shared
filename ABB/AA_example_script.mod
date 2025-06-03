@@ -25,6 +25,8 @@ MODULE INST_Module
     !***********************************************************
     
     LOCAL PERS pose my_pose:=[[50,20,0],[1,0,0,0]];
+    VAR num RX;
+    VAR num RY;
     VAR num RZ;
     VAR string my_string;
     
@@ -78,6 +80,27 @@ MODULE INST_Module
         display_results;
         INST_workobject.oframe:=my_pose;
         offset_pro;
+    ENDPROC
+    
+    PROC loops_and_ifs()
+        
+        IF DI_0 = 1 THEN
+            ! what to do
+            SetDO DO_0, 0;
+        ELSEIF DI_1 = 1 THEN
+            ! what to do
+        ELSE
+            ! what to do
+        ENDIF
+        
+        FOR i FROM 0 TO 10 DO
+            ! what to do
+        ENDFOR
+        
+        WHILE DI_0 = 1 DO
+            ! what to do
+        ENDWHILE
+        
     ENDPROC
     
 ENDMODULE
