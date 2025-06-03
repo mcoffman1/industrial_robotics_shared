@@ -43,7 +43,7 @@ This guide walks through the steps to configure DeviceNet communication on an AB
 1. Right-click **Signals** and select **New Signal**.
 2. Configure your **inputs** as shown below:
 
-![Input Configuration](pics/input_configuration.png)
+![Input Configuration](pics/inputconfiguration.png)
 
 ---
 
