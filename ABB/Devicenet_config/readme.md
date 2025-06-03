@@ -30,7 +30,7 @@ This guide walks through the steps to configure DeviceNet communication on an AB
 
 4. Configure the device as shown below:
 
-![DeviceNet Configuration](pics/device_net_configuration.png)
+![DeviceNet Configuration](pics/devicenet_configuration.png)
 
 5. **Restart the controller** again to finalize the configuration.
 
