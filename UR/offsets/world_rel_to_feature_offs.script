@@ -1,0 +1,3 @@
+def getoffs(x_offset, y_offset, z_offset, feature, poseToShift):
+    return pose_trans(feature, pose_add(pose_trans(pose_inv(feature), poseToShift), p[x_offset, y_offset, z_offset, 0, 0, 0]))
+end
