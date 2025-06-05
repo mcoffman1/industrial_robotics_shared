@@ -1,65 +1,84 @@
 # URScript Offset Examples
 
-This repository contains three example URScript files that demonstrate how to apply position offsets using different reference frames in a Universal Robots program.
+This repository includes three URScript files that demonstrate different methods of applying positional offsets on a Universal Robots system. Each script is designed to be **reusable** and **parameterized**, meaning no internal modifications are required — simply pass in the required input variables when you call the script.
+
+---
 
 ## Script Overview
 
 ### 1. `simple_offset.script`
 
-**Description:**
-This script demonstrates how to apply a basic position offset to the robot's current pose. It adds a fixed XYZ translation to the current TCP (Tool Center Point) position.
+**Purpose:**  
+Applies a basic Cartesian offset to the robot’s current pose. The offset is passed in as a variable.
 
-**Use Case:**
-Ideal for simple movements where you need to shift the end-effector in a specific direction, such as picking an object at a known offset.
+**Inputs:**
+- `offset_vector`: A pose or translation `[x, y, z, rx, ry, rz]` applied to the current TCP pose.
 
-**How to Use:**
-- Load the script into the UR controller or paste into a Program node.
-- Modify the `pose_trans` offset vector as needed.
-- Run the program to see the tool move to the offset position.
+**Usage:**
+- Call this script from another UR program or script.
+- Pass in the `offset_vector` variable before calling.
+- The script will move the robot to the offset position relative to the current TCP.
 
 ---
 
 ### 2. `feature_offset.script`
 
-**Description:**
-This script applies an offset relative to a predefined feature or coordinate system (e.g., a fixture or part location defined in the UR Polyscope feature list).
+**Purpose:**  
+Moves the robot relative to a defined feature coordinate system using a passed-in pose and offset.
 
-**Use Case:**
-Useful for consistent movements relative to a workpiece, regardless of the robot’s base or tool orientation.
+**Inputs:**
+- `feature_pose`: A `pose` representing the origin of the feature frame.
+- `offset_vector`: A `pose` or translation to apply within the feature frame.
 
-**How to Use:**
-- Define a feature frame in the UR teach pendant.
-- Edit the script to reference the feature’s pose.
-- The tool will move relative to that feature plus the specified offset.
+**Usage:**
+- Define `feature_pose` and `offset_vector` in your main program or script.
+- Call this script after setting those variables.
+- The robot will move to the `feature_pose + offset_vector` position, computed with frame transformation.
 
 ---
 
 ### 3. `world_rel_to_feature_offs.script`
 
-**Description:**
-This advanced script computes an offset in the world coordinate system, relative to a feature. It transforms the target location from one reference frame to another.
+**Purpose:**  
+Computes a position in the world frame based on an offset relative to a feature. This allows precise transformation between frames.
 
-**Use Case:**
-Ideal when performing tasks that require precise spatial relationships between objects in different frames (e.g., aligning to a feature in the world space).
+**Inputs:**
+- `feature_pose`: The base pose of the feature in world coordinates.
+- `offset_vector`: The desired offset in the feature’s local frame.
 
-**How to Use:**
-- Ensure both the feature frame and world pose are properly defined.
-- The script calculates the transformation using `pose_trans` and inverse kinematics.
-- Run the script to move the robot based on this transformed pose.
+**Usage:**
+- Set `feature_pose` and `offset_vector` before calling the script.
+- The robot will compute the equivalent world position and move there.
 
 ---
 
-## Getting Started
+## How to Use
 
-1. Copy the desired `.script` file to a USB drive or send it to the UR controller via FTP.
-2. Open the file in Polyscope via the "Script" node or insert the code into a URCap if integrating with other program logic.
-3. Adjust the poses and offset values in the script to match your application.
-4. Run the program and observe the toolpath.
+1. Load these scripts onto the UR controller.
+2. In your main URScript or URCap logic:
+    - Define the input variables (`feature_pose`, `offset_vector`, etc.).
+    - Use the `run` or `global` statement to execute the desired script.
+3. These scripts handle the math and movement using the provided values — no internal edits are necessary.
 
-> ⚠️ **Safety Notice:** Always run scripts in simulation mode first to verify the path before executing on a live robot.
+> 💡 **Example:**
+> ```ur
+> feature_pose = p[0.5, 0.2, 0.1, 0, 0, 0]
+> offset_vector = p[0.0, 0.0, 0.05, 0, 0, 0]
+> run feature_offset.script
+> ```
+
+---
+
+## Notes
+
+- These scripts are designed for **modular integration** — useful for any program needing relative motion in tool, feature, or world coordinates.
+- You can call them multiple times with different variables to execute dynamic motion logic.
+- Make sure your variables are defined with correct types (`pose`, `float`, etc.) before execution.
+
+> ⚠️ **Safety Reminder:** Always test offset movements in simulation or reduced-speed mode to prevent unexpected collisions.
 
 ---
 
 ## License
 
-This project is provided for educational and instructional use. Modify freely for your application needs.
+These examples are provided for instructional and prototyping use. Feel free to adapt them for your application.
