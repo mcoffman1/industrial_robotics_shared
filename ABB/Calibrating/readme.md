@@ -2,4 +2,4 @@
 
 ---
 
-📄 [ABB Maintenance Manual (PDF)](./IRB120 Manual.pdf)
+📄 [ABB Maintenance Manual (PDF)](./IRB120_Manual.pdf)
