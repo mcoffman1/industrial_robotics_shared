@@ -4,9 +4,6 @@
 ---
 
 # Fanuc Program Flow (if, else, loop)
-
----
-
 This guide shows where to find different tools for controlling the flow of your programs on a Fanuc robot
 
 ---
