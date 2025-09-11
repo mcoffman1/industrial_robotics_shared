@@ -8,9 +8,6 @@ This guide shows where to find different tools for controlling the flow of your 
 
 ## Useful tools
 Many usefull tools for inserting lines, deleteing, cutting, copying, and pasting can be found in the EDCMD menu. You may have to hit the **>** in the bottom right corner then hit ```EDCMD``` to enter the menu.
-
----
-
 ![EDCMD Menu](images/edcmd.png)
 
 ---
