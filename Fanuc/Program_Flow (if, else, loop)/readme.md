@@ -1,17 +1,12 @@
 
 ![LOGO](images/LOGO.png)
 
----
-
 # Fanuc Program Flow (if, else, loop)
 This guide shows where to find different tools for controlling the flow of your programs on a Fanuc robot
 
 ---
 
 ## Useful tools
-
----
-
 Many usefull tools for inserting lines, deleteing, cutting, copying, and pasting can be found in the EDCMD menu. You may have to hit the **>** in the bottom right corner then hit ```EDCMD``` to enter the menu.
 
 ---
