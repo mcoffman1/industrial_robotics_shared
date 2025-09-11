@@ -50,7 +50,9 @@ For the program shown above I used the ```if (...) then``` statments. The if the
 
 All of these tools can be used to create loops program which loops through and offset square three times and then a semicircle twice
 
-![Loop Program](images/loop.png) ![Square Program](images/square.png) ![Semicircle Program](images/circ.png)
+![Loop Program](images/loop.png)
+
+![Square Program](images/square.png) ![Semicircle Program](images/circ.png)
 
 ---
 
