@@ -87,4 +87,16 @@ To verify how UI/UO signals are assigned:
 - The robot must be in **Remote mode** for UI/UO signals to function.  
 - Reserved signals can be configured as needed for specific applications.  
 
+## How to Tell if the Robot is in Remote Mode
+
+On the Teach Pendant, look for the Remote/Local setting:
+
+1. Press **MENU** → **SYSTEM** → **Config**.
+2. Find the option **Remote/Local Setup**.
+3. You can set the default start method:
+
+**Local** = pendant controls program start.
+
+**Remote** = external UI/UO signals control program start.
+
 ---
