@@ -40,7 +40,9 @@ The **User Operator Panel (UOP)** signals on a FANUC robot allow communication b
 | UI[5]  | Fault Reset | Pulsed to clear faults.                                                    |
 | UI[6]  | Start       | Starts/resumes a program (behavior depends on `$shell_cfg.$cont_only`).    |
 | UI[7]  | Home        | Executes a "home" macro to return robot to a defined position.             |
-| UI[8]  | Enable      | ON enables robot to move and run programs.                                 |
+| UI[8]  | *Enable     | ON enables robot to move and run programs.                                 |
+
+**"*"** = Must be held on when integrated with PLC
 
 ---
 
