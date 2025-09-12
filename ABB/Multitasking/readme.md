@@ -179,3 +179,5 @@ ENDMODULE
 ---
 
 With this setup, the goal is that indicator lights turn **on when a button is pressed**, and **off after the associated routine completes**.  
+
+# All code can be found in the example scripts folder
