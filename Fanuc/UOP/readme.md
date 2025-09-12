@@ -42,7 +42,7 @@ The **User Operator Panel (UOP)** signals on a FANUC robot allow communication b
 | UI[7]  | Home        | Executes a "home" macro to return robot to a defined position.             |
 | UI[8]  | *Enable     | ON enables robot to move and run programs.                                 |
 
-**"*"** = Must be held on when integrated with PLC
+**"*"** = Must be held on when integrated with PLC for **remote run**
 
 ---
 
