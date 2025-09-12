@@ -37,13 +37,14 @@ This setup allows multiple requests to be queued and executed in sequence.
 
 ---
 
-## Main Motion Task (`MainTask.mod`)
+## Main Motion Task
 
 The **main task** executes robot motion routines.  
 It continuously checks for queued requests and runs them in order.  
+This module should be in the "main task"
 
 ```Rapid
-MODULE MainTask
+MODULE MainModule
     VAR string requestQueue{20};   ! FIFO queue for up to 20 requests
     VAR num head := 1;
     VAR num tail := 1;
@@ -89,15 +90,17 @@ ENDMODULE
 
 ---
 
-## Background Task (`BG_Task.mod`)
+## Background Task 
 
 The **background task** monitors the pushbuttons.  
 When a button is pressed, it:  
 1. Queues a request.  
 2. Turns on the corresponding light.  
 
+This module should be in the "background task"
+
 ```Rapid
-MODULE BG_Task
+MODULE BG_Module
     TASK PERS string requestQueue{20};   ! Shared queue
     TASK PERS num head := 1;
     TASK PERS num tail := 1;
