@@ -33,7 +33,7 @@
 MODULE BG_Module
     PERS num testvar := 0;
      
-    PROC not_main()
+    PROC main()
         !Main Background Routine
         WaitTime 3;
         testvar := 1;
