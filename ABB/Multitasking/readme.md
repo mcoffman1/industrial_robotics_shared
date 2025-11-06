@@ -3,24 +3,24 @@
 ### Setup
 1. Make sure you have multitaking
     - On a **Real Robot** just go to your system properties and make sure the option is installed
-    
-    ![system properties](images/pic2.png)
 
-    - on a **Virtual Robot** you can change options and add it
+        ![system properties](images/pic2.png)
+
+    - on a **Virtual Robot** you can `Change Options` and add it
     - you will find it in the `Controller` --> `Change Options` --> `Engineering Tools`
-     
-     ![engineering tools](images/pic3.png)
+
+        ![engineering tools](images/pic3.png)
 
 ---
 
 2. Create a new task
     - In the **Controller** tab go to `Configuration` --> `Cotroller` --> `Task` then right click and select `New Task...`
-    
-    ![new task](images/pic1.png)
+        
+        ![new task](images/pic1.png)
 
     - Setup your new task as shown
-    
-    ![bg task](images/pic4.png)
+
+        ![bg task](images/pic4.png)
     
     - **Remember:** you can only have **One Motion Task**
 
