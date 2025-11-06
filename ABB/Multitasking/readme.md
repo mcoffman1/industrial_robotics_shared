@@ -1,32 +1,33 @@
 ![logo](images/LOGO.png)
 
-### Setup
-1. Make sure you have multitaking
-    - On a **Real Robot** just go to your system properties and make sure the option is installed
+## Setup
+#### 1. Make sure you have multitaking
+1. Make sure you have the **Multitasking** option installed
+- On a **Real Robot** just go to your system properties and make sure the option is installed
 
-        ![system properties](images/pic2.png)
+    ![system properties](images/pic2.png)
 
-    - on a **Virtual Robot** you can `Change Options` and add it
-    - you will find it in the `Controller` --> `Change Options` --> `Engineering Tools`
+- on a **Virtual Robot** you can `Change Options` and add it
+- you will find it in the `Controller` --> `Change Options` --> `Engineering Tools`
 
-        ![engineering tools](images/pic3.png)
+    ![engineering tools](images/pic3.png)
 
 ---
 
-2. Create a new task
-    - In the **Controller** tab go to `Configuration` --> `Cotroller` --> `Task` then right click and select `New Task...`
+#### 2. Create a new task
+1. In the **Controller** tab go to `Configuration` --> `Cotroller` --> `Task` then right click and select `New Task...`
         
-        ![new task](images/pic1.png)
+    ![new task](images/pic1.png)
 
-    - Setup your new task as shown
+2. Setup your new task as shown
 
-        ![bg task](images/pic4.png)
+    ![bg task](images/pic4.png)
     
-    - **Remember:** you can only have **One Motion Task**
+    **Remember:** you can only have **One Motion Task**
 
 ---
 
-3. Reboot your robot and you are ready to start multitasking. Below are a couple sample modules that you can put in your tasks to test them
+#### 3. Reboot your robot and you are ready to start multitasking. Below are a couple sample modules that you can put in your tasks to test them
  
 > **BG_Module:**This module is for the background task
 ```Rapid
@@ -77,4 +78,4 @@ MODULE Main_Module
     ENDPROC
 ENDMODULE
 ```
-
+---
