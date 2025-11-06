@@ -2,12 +2,11 @@
 
 # Setup
 ## 1. Make sure you have multitaking
-1. Make sure you have the **Multitasking** option installed
-- On a **Real Robot** just go to your system properties and make sure the option is installed
+1. On a **Real Robot** just go to your system properties and make sure the option is installed
 
     ![system properties](images/pic2.png)
 
-- on a **Virtual Robot** you can `Change Options` and add it
+2. on a **Virtual Robot** you can `Change Options` and add it
 - you will find it in the `Controller` --> `Change Options` --> `Engineering Tools`
 
     ![engineering tools](images/pic3.png)
