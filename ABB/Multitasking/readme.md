@@ -154,7 +154,9 @@ ENDMODULE
 ## Setup Steps
 
 1. **Enable Multitasking**  
-   - FlexPendant → Menu → Controller → System Parameters → Controller → Tasks → Multitasking = *On*.  
+   - Robotstudio tabs → Controller → Change Options → Engineering Tools → Multitasking
+   - Controller → Configuration → Task
+        - Add non-motion task
 
 2. **Create Tasks**  
    - Task 1: `MainTask` (motion-enabled).  
