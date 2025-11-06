@@ -1,7 +1,7 @@
 ![logo](images/LOGO.png)
 
-## Setup
-#### 1. Make sure you have multitaking
+# Setup
+### 1. Make sure you have multitaking
 1. Make sure you have the **Multitasking** option installed
 - On a **Real Robot** just go to your system properties and make sure the option is installed
 
@@ -14,7 +14,7 @@
 
 ---
 
-#### 2. Create a new task
+### 2. Create a new task
 1. In the **Controller** tab go to `Configuration` --> `Cotroller` --> `Task` then right click and select `New Task...`
         
     ![new task](images/pic1.png)
@@ -27,7 +27,7 @@
 
 ---
 
-#### 3. Reboot your robot and you are ready to start multitasking. Below are a couple sample modules that you can put in your tasks to test them
+### 3. Reboot your robot and you are ready to start multitasking. Below are a couple sample modules that you can put in your tasks to test them
  
 > **BG_Module:**This module is for the background task
 ```Rapid
