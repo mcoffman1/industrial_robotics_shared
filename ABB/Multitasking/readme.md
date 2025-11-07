@@ -28,7 +28,7 @@
 
 ## 3. Reboot your robot and you are ready to start multitasking. Below are a couple sample modules that you can put in your tasks to test them
  
-> **BG_Module:**This module is for the background task
+> **BG_Module:** This module is for the background task
 ```Rapid
 MODULE BG_Module
     PERS num testvar := 0;
@@ -45,7 +45,7 @@ MODULE BG_Module
 ENDMODULE
 ```
 
-> **Main_Module:**This module is for the Motion task
+> **Main_Module:** This module is for the Motion task
 ```Rapid
 MODULE Main_Module
     PERS num testvar;
