@@ -1,20 +1,20 @@
 # Industrial robotics shared
 Shared repo for Industrial Robotics
 
-# 📘 Shared Educational Resources
+# Shared Educational Resources
 
 Welcome to this shared repository for students and alumni. This space is designed to support learning, collaboration, and sharing of educational materials, code examples, and project resources.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 This repository contains organized subdirectories for different topics. Please browse the folders for relevant content and examples.
 
 
 ---
 
-## ✍️ Contribution Guidelines
+## Contribution Guidelines
 
 We welcome contributions from students, alumni, and collaborators. To keep the repository clean and organized:
 
@@ -29,7 +29,7 @@ If you're unsure where something belongs, consider creating a thread or asking i
 
 ---
 
-## 🤝 About This Project
+## About This Project
 
 This repository is maintained as a collaborative learning resource. All contributions are meant to support current and future learners in their educational and professional journeys.
 

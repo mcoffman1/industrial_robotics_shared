@@ -1,5 +1,12 @@
 # URScript Offset Examples
 
+---
+
+### Purpose:
+With UR it is very easy to do relative moves from your current location. However, if you want to move to a location realative to a point **before** moving to that point, you must use ur scripts. These scripts allow you to do these kinds of offsets in different coordinate systems.
+
+---
+
 This repository includes three URScript files that demonstrate different methods of applying positional offsets on a Universal Robots system. Each script is designed to be **reusable** and **parameterized**, meaning no internal modifications are required — simply pass in the required input variables when you call the script.
 
 ---
@@ -9,7 +16,7 @@ This repository includes three URScript files that demonstrate different methods
 ### 1. `simple_offset.script`
 
 **Purpose:**  
-Applies a basic Cartesian offset to the robot’s current pose. The offset is passed in as a variable.
+Applies a basic Cartesian offset to the robot’s current tool center point (TCP). The offset is passed in as a variable.
 
 **Inputs:**
 - `offset_vector`: A pose or translation `[x, y, z, rx, ry, rz]` applied to the current TCP pose.
@@ -24,7 +31,7 @@ Applies a basic Cartesian offset to the robot’s current pose. The offset is pa
 ### 2. `feature_offset.script`
 
 **Purpose:**  
-Moves the robot relative to a defined feature coordinate system using a passed-in pose and offset.
+Moves the robot relative to a defined feature(often called user frame) coordinate system using a passed-in pose and offset.
 
 **Inputs:**
 - `feature_pose`: A `pose` representing the origin of the feature frame.

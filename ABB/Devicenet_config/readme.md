@@ -1,3 +1,5 @@
+![LOGO](pics/LOGO.png)
+
 # Configuring DeviceNet on an ABB Virtual Controller
 
 This guide walks through the steps to configure DeviceNet communication on an ABB robot controller.
@@ -55,9 +57,8 @@ This guide walks through the steps to configure DeviceNet communication on an AB
 
 ---
 
-## ✅ Done!
 
 Your ABB controller is now configured to use DeviceNet I/O. Be sure to verify the signal mapping with your connected DeviceNet devices.
 
----
+![LOGO](pics/LOGO.png)
 
