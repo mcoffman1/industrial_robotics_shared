@@ -1,1 +1,0 @@
-![LOGO](pics/LOGO.png)

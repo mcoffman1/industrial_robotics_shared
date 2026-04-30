@@ -7,7 +7,7 @@
 **Steps**
 1. Teach pendant: `MENU → I/O → Ethernet/IP`  
    - If missing, robot requires licensed Ethernet/IP option (R784 if working in Roboguide)  
-![eth ip menu]](pics/pic7.png)
+![eth ip menu](pics/pic7.png)
 2. Select **Connection1** and press **F4 (Config)**  
 3. Set:
    - **Input Size:** `8 words`  
@@ -26,6 +26,7 @@ If using safety we also need to configure it
 ![safety menu](pics/pic10.png)
 
 **Checkpoint**
-> Next we will configure the PLC. If you are following the guide to setup **Remote Control** I usually like to setup my user operator panel([UOP]()) next.
+> For basic comms, next we will configure the [Fanuc Module on PLC](https://github.com/mcoffman1/basic_shared/tree/main/Allen%20Bradley/Communication%20to%20Fanuc). 
+> If you are following this guide to setup **Remote Control** I usually like to setup my user operator panel([UOP Setup Guide](https://github.com/mcoffman1/industrial_robotics_shared/tree/main/Fanuc/UOP/Setup%20guide)) next.
 
 ---
