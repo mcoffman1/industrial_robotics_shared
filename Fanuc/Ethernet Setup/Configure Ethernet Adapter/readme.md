@@ -27,6 +27,6 @@ If using safety we also need to configure it
 
 **Checkpoint**
 > For basic comms, next we will configure the [Fanuc Module on PLC](https://github.com/mcoffman1/basic_shared/tree/main/Allen%20Bradley/Communication%20to%20Fanuc). 
-> If you are following this guide to setup **Remote Control** I usually like to setup my user operator panel([UOP Setup Guide](https://github.com/mcoffman1/industrial_robotics_shared/tree/main/Fanuc/UOP/Setup%20guide)) next.
+> If you are following this guide to setup **Remote Control** I usually like to setup my user operator panel. To do that you must choose either **RSR**, **PNS**, or [Other](https://github.com/mcoffman1/industrial_robotics_shared/tree/main/Fanuc/Remote%20Control%20Methods/Other). *Links will be added for RSR, and PNS soon.
 
 ---

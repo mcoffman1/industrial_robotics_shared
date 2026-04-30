@@ -81,3 +81,5 @@ below are sample config images for the digital inputs and outputs
 ---
 
 #### Cycle Power to the robot for all changes to take effect
+
+> If you are following the **Remote Control** Guide, your next step is to create a [Fanuc Module on the PLC](https://github.com/mcoffman1/basic_shared/tree/main/Allen%20Bradley/Communication%20to%20Fanuc)
