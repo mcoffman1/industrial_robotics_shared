@@ -31,6 +31,6 @@ The following are optional config examples. **Bold** items are necessary for rem
       - **Full (CRMA16):** A specific option that performs a "Full" assignment using the robot's physical CRMA16 connector, which is a common hardwired I/O interface on FANUC controllers.
       - **Simple (CRMA16):** Performs a "Simple" assignment using the CRMA16 connector.
 
-> Next I usually [Setup Host Communication]()
+> Next I usually [Setup Host Communication](https://github.com/mcoffman1/industrial_robotics_shared/tree/main/Fanuc/Ethernet%20Setup/Setup%20Hot%20Comm)
 
 ---

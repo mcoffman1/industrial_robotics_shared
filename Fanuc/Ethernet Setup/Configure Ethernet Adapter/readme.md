@@ -26,6 +26,6 @@ If using safety we also need to configure it
 ![safety menu](pics/pic10.png)
 
 **Checkpoint**
-> Next we will configure the PLC.
+> Next we will configure the PLC. If you are following the guide to setup **Remote Control** I usually like to setup my user operator panel([UOP]()) next.
 
 ---

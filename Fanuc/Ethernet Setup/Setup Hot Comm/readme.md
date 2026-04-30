@@ -22,6 +22,6 @@
 
 ![ping](pics/pic6.png)
 
-> Next we will [Configure the Ethernet Adapter]() but you should be able to ping the PLC from this screen once commnication has been setup on both ends.
+> Next we will [Configure the Ethernet Adapter](https://github.com/mcoffman1/industrial_robotics_shared/tree/main/Fanuc/Ethernet%20Setup/Configure%20Ethernet%20Adapter) but you should be able to ping the PLC from this screen once commnication has been setup on both ends.
 
 ---
