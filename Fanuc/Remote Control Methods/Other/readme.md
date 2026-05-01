@@ -5,16 +5,22 @@
 ## 1. Setup the Program Select mode
 
 **Steps**
-1. First make sure they **Program select mode** is set to `OTHER` and the **Production start method** is set to `UOP`
+1. First make sure the **Program select mode** is set to `OTHER` and the **Production start method** is set to `UOP`
     - Press `SETUP`
     - Select `|TYPE|` -> `1 Prog Select`
+
 ![setup menu](pics/pic5.png)
+
 ![PSM](pics/pic6.png)
 
-2. With `OTHER` selected press `DETAIL` 
+2. With `OTHER` selected press `DETAIL`
+
 ![Other setup](pics/pic7.png)
+
 3. Change the `$shell_wrk.$cust_name :` to **Name_of_your_main_program**
+
 ![program choice](pics/pic8.png)
+
 you can press choice and selet the program **Name_of_your_main_program** if you have already created the progam, or you can just type it in and create it later
 > **Note:** The **OTHER** select mode with a progam named **_MAIN** is required by the **GRS**
 
@@ -30,7 +36,9 @@ you can press choice and selet the program **Name_of_your_main_program** if you 
 2. Start with the **UOP Inputs** screen.
     - Press `CONFIG` to go to the configuration screen
 3. Next we ar going to set `UI[1-8]` to RACK=89, SLOT=1, START=121
+
 ![UI config](pics/pic1.png)
+
 **RACK 89** is for ethernet
 **SLOT 1** is for the PLC
 **START 121** we will talk about why we chose this later.
@@ -58,6 +66,7 @@ The robot should show pending. Once we are done configuring the I/O we will need
 
 ## 3. Setup UOP Output Signals
 The steps are the same for the outputs but the start bit will be 119 because we are using 10 bits for the outputs
+
 ![Output config](pics/pic2.png)
 
 | Bit # | Signal Name | Function |
@@ -75,7 +84,9 @@ The steps are the same for the outputs but the start bit will be 119 because we 
 
 ## 4. Setup digital I/O
 below are sample config images for the digital inputs and outputs
+
 ![input config](pics/pic3.png)
+
 ![output config](pics/pic4.png)
 
 ---
