@@ -22,7 +22,7 @@
 ![program choice](pics/pic8.png)
 
 you can press choice and selet the program **Name_of_your_main_program** if you have already created the progam, or you can just type it in and create it later
-> **Note:** The **OTHER** select mode with a progam named **_MAIN** is required by the **GRS**
+
 
 ---
 
